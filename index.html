@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link href="bootstrap-5.0.2-dist/css/style.css" rel = "stylesheet">
     <title>BootStrap Blog</title>
   </head>
   <body>
@@ -32,9 +32,9 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="booking .html">Booking</a></li>
-                  <li><a class="dropdown-item" href="#">Flight</a></li>
+                  <li><a class="dropdown-item" href="flight.html">Flight</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Contact</a></li>
+                  <li><a class="dropdown-item" href="contact.html">Contact</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -140,10 +140,10 @@
       <hr>
 
       <!--Room overview-->
-      <div class="card mb-3" style="max-width: 1000px;">
+      <div class="card mb-3" style="max-width: 1500px;  border: none;">
         <div class="row g-0">
           <div class="col-md-4">
-            <img src="https://i.pinimg.com/originals/f5/e8/4c/f5e84cf14f5428372ddf9272308951b6.jpg" class="img-fluid rounded-start" alt="...">
+            <img src="https://i.pinimg.com/originals/f5/e8/4c/f5e84cf14f5428372ddf9272308951b6.jpg" class="img-fluid rounded-start" alt="..." style="">
           </div>
           <div class="col-md-8">
             <div class="card-body">
@@ -160,24 +160,28 @@
       </div>
       
       <!--Room Cards -->
-      <div class ="container">
+      <div class ="container" >
         <h3>Book your Hotel now </h3>
-        <ul class="list-group list-group-horizontal">
+        <ul class="list-group list-group-horizontal" style ="display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto; " 
+        
+      >
             <li class="list-group-item"> 
                    <div class="card" style="width: 18rem;">
             <img src="https://media.hrs.com/media/image/8a/f9/c6/Maui_Seaside_Hotel-Kahului-Aussenansicht-11-81175.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Hawaii</h5>
               <p class="card-text">This is the sea side hotel in Hawai with public pools</p>
-              <a href="#" class="btn btn-primary">Book now</a>
+              <a href="booking .html" class="btn btn-primary">Book now</a>
             </div></li>
             <li class="list-group-item"> 
                        <div class="card" style="width: 18rem;">
-                <img src="https://i0.wp.com/www.californiafamilytravel.com/wp-content/uploads/2019/10/20191010_183114-e1660808909102.jpg?fit=970%2C732&ssl=1" class="card-img-top" alt="...">
+                <img src="https://s1.it.atcdn.net/wp-content/uploads/2016/10/DL4-67-1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">California</h5>
                   <p class="card-text">This hotel located in Disney's Animal Kingdom Lodge</p>
-                  <a href="#" class="btn btn-primary">Book now</a>
+                  <a href="booking .html" class="btn btn-primary">Book now</a>
                 </div></li>
             <li class="list-group-item">      
                 <div class="card" style="width: 18rem;">
@@ -185,12 +189,13 @@
                 <div class="card-body">
                   <h5 class="card-title">Kyoto</h5>
                   <p class="card-text">This hotel located in Kyoto in Japan</p>
-                  <a href="#" class="btn btn-primary">Book now</a>
+                  <a href="booking .html" class="btn btn-primary">Book now</a>
                 </div></li>
           </ul>
     
           </div>
           <!--Question form-->
+          <div style="padding: 10px;">   
           <h2>Question form</h2>
           <p>Ask us any questions or problems</p>
           <div class="input-group mb-3">
@@ -207,9 +212,10 @@
             <label for="floatingTextarea2">Leave any comments here</label>
           </div>
             <button type="button" class="btn btn-primary"
-            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem; ">
             send
-            </button>
+            </button></div>
+    
           </div>
       
 
